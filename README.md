@@ -40,5 +40,5 @@ One important thing to address: Phronova already contains guides for how to use 
 
 ## Additional Features Tutorial:
 - For pages, it is similar to Next.JS's navigations (a folder creates a page)
-- For Interactivity use `core.Reactive(exampleVal)` to set a initial value. Set that to a variable (val in this example). and then do val:Get() to get the value, val:Set(newVal) to set a new value to val.
+- For Interactivity use `core.Reactive(exampleVal)` to set a initial value. Set that to a variable (`val` in this example). and then do `val:Get()` to get the value, `val:Set(newVal)` to set a new value to `val`.
 - Don't modify anything in generated. When you run, anything in generated will be overwritten, so don't waste the effort.
