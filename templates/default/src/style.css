@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 24px 50px;
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    color: #d4a017;
+}
+
+.subtitle {
+    max-width: 700px;
+
+    margin: 18px auto 0;
+
+    font-size: 22px;
+    line-height: 1.5;
+
+    color: #e5e5e5;
+}
+
+.description {
+    max-width: 600px;
+
+    margin: 14px auto 0;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #999;
+}
+
+.features {
+    width: min(1100px, calc(100% - 48px));
+
+    margin: 0 auto 80px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    padding: 28px;
+
+    border: 1px solid #292929;
+    border-radius: 12px;
+
+    background: #111;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #d4a017;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+
+    color: #d4a017;
+
+    font-size: 19px;
+}
+
+.feature-card p {
+    margin: 0;
+
+    color: #999;
+
+    line-height: 1.6;
+}
+
+.getting-started {
+    text-align: center;
+
+    padding: 70px 24px 100px;
+
+    border-top: 1px solid #202020;
+}
+
+.getting-started h2 {
+    margin: 0 0 12px;
+
+    font-size: 30px;
+
+    color: #f5f5f5;
+}
+
+.getting-started p {
+    margin: 0;
+
+    color: #888;
+}
+
+@media (max-width: 800px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 500px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}

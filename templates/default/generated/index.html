@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Phronova</title>
+</head>
+
+<body>
+    <div><main><section class="hero montserrat-home"><img class="logo" width="300" src="/images/logo.png"></img><h1>Build with Phronova</h1><p class="subtitle">The Lua framework for building modern web and desktop applications.</p><p class="description">Create pages, components, reactive interfaces, and complete applications using Lua.</p></section><section class="features"><div class="feature-card"><h3>⚡ Reactive</h3><p>Build interfaces that respond to changing data.</p></div><div class="feature-card"><h3>📄 File-Based Pages</h3><p>Organize your application with simple Lua files.</p></div><div class="feature-card"><h3>🎨 Flexible Styling</h3><p>Use custom CSS, Tailwind, or Bootstrap.</p></div><div class="feature-card"><h3>🖥️ Web + Desktop</h3><p>Build for the browser or run your application as a desktop app.</p></div></section><section class="getting-started"><h2>Ready to build?</h2><p>Create your pages, add your components, and let Phronova handle the rest.</p></section></main></div>
+        <script src="/phronova.js"></script>
+        <script>
+            const phronovaReload =
+                new EventSource("/__phronova_reload");
+
+            phronovaReload.onmessage =
+                function(event) {
+                    if (event.data === "reload") {
+                        location.reload();
+                    }
+                };
+        </script>
+    </body>
+</html>

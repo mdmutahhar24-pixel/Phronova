@@ -1,0 +1,7 @@
+.vscode/
+*.exe
+*.dll
+*.zip
+*.log
+runtime/webview/window.exe.WebView2/
+css/tailwind/
